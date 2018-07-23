@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+var i;
+var text = '';
+for (i = 30; i <= 300; i++) {
+    if(i%7==0 && i%13==0){
+    	text += "a-z" + "<br>";
+    }
+    else if(i%7==0){
+    	text += "abc" + "<br>";
+    }
+    else if(i%13==0){
+   	 	text += "xyz" + "<br>";
+    }
+    else{
+    	text += i + "<br>";
+    }
+    
+}
+document.getElementById("demo").innerHTML = text;
+</script>
+
+</body>
+</html>
